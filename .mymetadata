@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="BaseTrainManage"
+  id="myeclipse.1460353447242"
+  context-root="/BaseTrainManage"
+  j2ee-spec="5.0"
+  archive="BaseTrainManage.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
