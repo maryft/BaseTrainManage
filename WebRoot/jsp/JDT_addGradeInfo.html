@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>高校实训学生管理系统</title>
+ <link rel="stylesheet" type="text/css" href="../css/input.css">
+</head>
+<body>
+	<div id="head1"><img  src="../image/info.png"/></div>
+    <div id="head2">当前位置：首页&nbsp;>>&nbsp;实训成绩管理&nbsp;>>&nbsp;<b>实训成绩录入</b></div>
+    <div id="person"><img  src="../image/person.png"/></div>
+   <div id="welcome">您好：<b id="name"></b>,欢迎登录外实训学生管理系统--基地教师管理子系统</div>
+   <div id="time"><img  src="../image/time.png"/>
+    <script language="JavaScript" type="text/javascript"> 
+var today=new Date(); 
+var strDate=(" "+today.getFullYear()+"年"+(today.getMonth()+1)+"月"+today.getDate()+"日"); 
+var n_day=today.getDay(); 
+switch(n_day){ 
+case 0: 
+{strDate=strDate+" 星期日 "}break; 
+case 1: 
+{strDate=strDate+" 星期一 "}break; 
+case 2: 
+{strDate=strDate+" 星期二 "}break; 
+case 3: 
+{strDate=strDate+" 星期三 "}break; 
+case 4: 
+{strDate=strDate+" 星期四 "}break; 
+case 5: 
+{strDate=strDate+" 星期五 "}break; 
+case 6: 
+{strDate=strDate+" 星期六 "}break; 
+case 7: 
+{strDate=strDate+" 星期日 "}break; 
+} 
+document.write(strDate); 
+</script> 
+ </div>
+ <div id="information">
+ <form action="" method="post">
+ 	<table class="kuang" width="85%" cellspacing="0" cellpadding="0">
+ 	<thead>
+ 	    <tr bgcolor="#d2e9ff" height="22" align="left">
+ 	       <th colspan="9" align="left">实训成绩信息</th>
+ 	    </tr>
+ 		<tr align="center" bgcolor="#97cbff" height="22" >
+ 			<th width="10%">学号</th>
+ 			<th width="10%">姓名</th>
+ 			<th width="10%">性别</th>
+ 			<th width="10%">年龄</th>
+ 			<th width="10%">电话</th>
+ 			<th width="10%">实训单位</th>
+ 			<th width="10%">实训班级</th>
+ 			<th width="10%">毕业院校</th>
+ 			<th width="10%">操作</th>
+ 		</tr>
+ 	</thead>
+ 	<tbody>
+ 	   <tr align="center" bgcolor='#ffffff'  onMouseMove="javascript:this.bgColor='#E7FDFE';" onMouseOut="javascript:this.bgColor='#FFFFFF';">
+ 	   	<td>111</td>
+ 	   	<td>111</td>
+ 	   	<td>111</td>
+ 	   	<td>111</td>
+ 	   	<td>111</td>
+ 	   	<td>111</td>
+ 	   	<td>111</td>
+ 	   	<td>111</td>
+ 	   	<td><a href="JDT_addGrade.html">录入成绩</a></td>
+ 	   
+ 	   </tr>
+ 	
+ 	</tbody>
+ 	<tfoot>
+ 	   <tr bgcolor="#d2e9ff">
+ 	   	<td colspan="9" align="right"><b>总共</b><b>0</b><b>条记录</b></td>
+ 	   </tr>
+ 	
+ 	</tfoot>
+ 	</table>
+ </form>
+ </div>
+</body>
+</html>

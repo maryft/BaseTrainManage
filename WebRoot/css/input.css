@@ -1,0 +1,50 @@
+@CHARSET "UTF-8";
+#head1{
+	   position:absolute;
+	   text-align:center;
+	   top:10px;
+	   left:19px;
+	   width:20px;
+	   height:20px;
+	   }
+	   #head2{
+	   position:absolute;
+	   text-align:center;
+	   top:15px;
+	   left:45px;
+	   font-size:13px;
+	   }
+	   #welcome{
+	   position:absolute;
+	   text-align:center;
+	   top:50px;
+	   left:129px;
+	}
+	#time{
+	   position:absolute;
+	   text-align:center;
+	   top:10px;
+	   left:1050px;
+	} 
+	#person{
+	   position:absolute;
+	   text-align:center;
+	   top:50px;
+	   left:99px;
+	   width:20px;
+	   height:20px;
+	   }
+	   #information{
+	       position:absolute;
+	       text-align:center;
+	       top:100px;
+	       left:140px;
+	       width:80%;
+	   }
+	   .kuang{
+	     border:1px solid #84c1ff;
+	     
+	   }
+	   th,td{
+	   border:1px solid #0080ff;
+	   }

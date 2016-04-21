@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>高校实训学生管理系统</title>
+ <link rel="stylesheet" type="text/css" href="../css/input.css">
+<style type="text/css">
+body{
+ position:relative;
+}
+	   
+	  #id1{
+	  width:25%;
+	  margin-left:5px;
+	  margin-top:3px;
+	  float:left;
+	  }
+	  #id2{
+	   width:25%;
+	   margin-top:3px;
+	   float:left;
+	  }
+	  #id3{
+	  width:30%;
+	  margin-top:3px;
+	  float:left;
+	  }
+	  #id4{
+	    position:absolute;
+        top:180px; 
+        left:140px; 
+	  }
+	  #course{
+	    width:25%;
+	    margin-top:10px;
+	    float:left;
+	    margin-left:5px;
+	  }
+	  .grade{ 
+	    margin-top:10px;
+	    width:15%;
+	    float:left;	     
+	   }
+	  #course select{
+	   width:135px;
+	   }
+	   .grade select{
+	   	 width:40px;
+	   }  
+	   #kuangjia{
+	       position:absolute;
+	       text-align:center;
+	       top:90px;
+	       left:140px;
+	   }
+	   #btnAdd{
+	   margin-top:10px;
+	   width:20%;
+	   float:left;
+	   }
+</style>
+</head>
+<body>
+	<div id="head1"><img  src="../image/info.png"/></div>
+    <div id="head2">当前位置：首页&nbsp;>>&nbsp;实训成绩管理&nbsp;>>&nbsp;<b>实训成绩录入</b></div>
+    <div id="person"><img  src="../image/person.png"/></div>
+   <div id="welcome">您好：<b id="name"></b>,欢迎登录外实训学生管理系统--基地教师管理子系统</div>
+   <div id="time"><img  src="../image/time.png"/>
+    <script language="JavaScript" type="text/javascript"> 
+var today=new Date(); 
+var strDate=(" "+today.getFullYear()+"年"+(today.getMonth()+1)+"月"+today.getDate()+"日"); 
+var n_day=today.getDay(); 
+switch(n_day){ 
+case 0: 
+{strDate=strDate+" 星期日 "}break; 
+case 1: 
+{strDate=strDate+" 星期一 "}break; 
+case 2: 
+{strDate=strDate+" 星期二 "}break; 
+case 3: 
+{strDate=strDate+" 星期三 "}break; 
+case 4: 
+{strDate=strDate+" 星期四 "}break; 
+case 5: 
+{strDate=strDate+" 星期五 "}break; 
+case 6: 
+{strDate=strDate+" 星期六 "}break; 
+case 7: 
+{strDate=strDate+" 星期日 "}break; 
+} 
+document.write(strDate); 
+</script> 
+ </div>
+ <div id="kuangjia">
+    <form action=" " method="post">
+    	<div id="id1">学&nbsp;&nbsp;&nbsp;&nbsp;号<input type="text" name="sno" value="" disabled="disabled"/>
+       </div>
+	     <div id="id2">姓&nbsp;&nbsp;名&nbsp;<input type="text" name="" disabled="disabled" value=""/></div>
+	     <div id="id3">实训单位&nbsp;<input type="text" name="" disabled="disabled" value=""/></div>
+	     <div id="course">课&nbsp;程&nbsp;号&nbsp;
+	     <select name=" ">  
+           <option value ="1111101">1111101</option>  
+           <option value ="1111102">1111102</option>  
+           <option value="1111103">1111103</option>  
+		   <option value="1111104">1111104</option>
+		   <option value="1111105">1111105</option>
+		   <option value="1111106">1111106</option>
+		   <option value="1111107">1111107</option>
+		   <option value="1111108">1111108</option>
+		   <option value="1111109">1111109</option>
+		   <option value="11111010">1111110</option>
+         </select>  
+	  </div>
+	  <div class="grade">
+	     月&nbsp;份&nbsp;
+	     <select>
+	        <option value ="1">1</option>  
+            <option value ="2">2</option>  
+            <option value="3">3</option>  
+		    <option value="4">4</option>
+		    <option value="5">5</option>
+	     </select>
+	  </div>
+	  <div class="grade">
+	    周&nbsp;数&nbsp;
+	    <select>
+	    	 <option value ="1"></option>  
+            <option value ="2">2</option>  
+            <option value="3">3</option>  
+		    <option value="4">4</option>
+		    <option value="5">5</option>
+	    </select>
+	  </div>
+	  <div class="grade">成&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;绩&nbsp;<input type="text" name="grade"/></div>
+	  <div id="btnAdd"><input type="submit" value="提交"/></div>
+ </form>
+ </div>
+    <div id="id4">
+    <form name="form2">
+     <table width="950px" border="0" cellpadding="0" cellspacing="0" bgcolor="b5d6e6" align="center">
+      <tr>
+         <td height="24"  colspan="8" align="left"><b>学生成绩信息</b></td>
+      </tr>
+	   
+       <tr align="center" bgcolor="#E7FDFE" height="22">
+	      <th width="10%"><b>学号</b></th>
+	      <th width="10%"><b>姓名</b></th>
+	      <th width="15%"><b>实训单位</b></th>
+	      <th width="10%"><b>课程号</b></th>
+	      <th width="10%"><b>课程名</b></th>
+	      <th width="10%"><b>学时</b></th>
+		  <th width="10%"><b>成绩</b></th>
+		  <th width="25%"><b>基本操作</b></th>
+       </tr>
+
+       <tr align='center' bgcolor="#FFFFFF" height="22" onMouseMove="javascript:this.bgColor='#E7FDFE';" onMouseOut="javascript:this.bgColor='#FFFFFF';">    
+	      <td></td>
+	      <td></td>
+	      <td></td>
+	      <td></td>
+	      <td></td>
+	      <td></td>
+	      <td></td>
+	      <td>
+	        <img  src="../image/upload.png"/>
+	           <a href="">上传卷面</a>&nbsp;
+	         <img  src="../image/min.png"/>
+	           <a href=""/>"查看卷面</a>
+	      </td>
+        </tr>
+		
+      <tr>
+         <td height="24" background="/Student_Manage/admin/images/tab_19.gif" colspan="8" align="right">
+                                          总共&nbsp;<b>0</b>条记录</td>
+     </tr>
+  </table>
+ </form>
+ </div>
+ </body>
+</html>

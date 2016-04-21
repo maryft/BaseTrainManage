@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>高校实训学生管理系统</title>
+    <meta content="text/html; charset=UTF-8">
+    
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+   <script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+   <script type="text/javascript" src="../js/menu.js"></script>
+   <script type="text/javascript">
+   function startup() {
+		$("#user_show").show();
+	}
+   	
+   </script>
+  </head>
+  
+  <body>
+  <div id="header">
+  	<div id="logo"><img src="../image/head.png"/></div>
+    <div id="front"><a href="../jsp/jdteachermain.html">首&nbsp;页</a></div>
+  	<div id="flush"><a href="../jsp/studentLogin.jsp">登&nbsp;录</a></div>
+  	<div id="end" onclick="window.close();">退&nbsp;出</div>
+  	
+  </div>
+  	<div class="navigation">
+  		<ul class="menu">
+  		  <li><a onclick="showtow(0,0,this)";>查询信息</a></li>
+  		  <li><a onclick="showtow(0,1,this)">课程信息管理</a></li>
+  		  <li><a onclick="showtow(0,2,this)">作业管理</a></li>
+  		  <li><a onclick="showtow(0,3,this)">个人信息管理</a></li>
+  		</ul>
+  	</div>
+  	<table class=kuangjia border=0 cellSpacing=10 cellPadding=0
+					width="100%" onload="startup();">
+  		<tbody>
+  			<tr>
+  				<td style="POSITION: relative;" id=LeftPart class=LeftPart>
+								<DIV
+									style="POSITION: absolute; BOTTOM: 100px; CURSOR: pointer; LEFT: 25px"></DIV>
+									<DIV style="POSITION: absolute; BOTTOM: 5px; LEFT: 2px"
+									><a href="http://jwc.hhit.edu.cn">
+									<IMG
+										src="../image/link.jpg"></a>
+										</div>
+  				    <DIV id=menuleft>
+  				    	
+									<TABLE style="border:none;" id=user_show class=user_1 border=0
+										>
+										<TBODY>
+											<TR>
+												<TD class=portrait><IMG
+													src="../image/portrait_s.gif"></TD>
+												<TD><B>UI2</B>&nbsp;先生/女生,您好!</TD>
+											</TR>
+											<TR>
+												<TD class=loginInfo colSpan=2>您上次登录时间:<A
+													>2014-06-26 13:26</A><BR></TD>
+											</TR>
+										</TBODY>
+									</TABLE>
+									<div style="DISPLAY: block" id=threeMenu1>
+										<ul >
+										  <li class="redTitle" style=" width:220px;padding-left:20px;height:47px; color:#fff; font-size:18px; line-height:47px;background:url(../image/tittle.png) no-repeat">
+										查询信息
+	                                    </li>
+											<LI class=#><IMG class=icon
+												src="../image/icon_1.gif"><a
+													onclick=upDownMenu(this) href="#">查询实训信息</a>
+												</li>
+
+											<li class=#><IMG class=icon
+												src="../image/icon_1.gif"><a
+													onclick=upDownMenu(this) href="#">查询基地教师信息</a>
+											</li>
+											<li class=#><IMG class=icon
+												src="../image/icon_1.gif"><a
+													onclick=upDownMenu(this) href="#">查询实训成绩</a>
+											</li>	
+										</ul>
+										<ul>
+										<li class="redTitle" style="background:url(../image/tittle.png) no-repeat; width:220px;padding-left:20px;height:47px; color:#fff; font-size:18px; line-height:47px;">
+										课程信息管理
+	                                    </li>
+											<LI class=# sizcache="4" sizset="0"><IMG class=icon
+												src="../image//icon_1.gif"><a
+													onclick=upDownMenu(this) href="#">查询学习计划</a>
+												</li>
+
+											<li class=# sizcache="4" sizset="0"><IMG class=icon
+												src="../image/icon_1.gif"><a
+													onclick=upDownMenu(this) href="#">下载课程资料</a>
+											</li>
+											<li class=# sizcache="4" sizset="0"><IMG class=icon
+												src="../image/icon_1.gif"><a
+													onclick=upDownMenu(this) href="#">查询课程考勤</a>
+											</li>
+										</ul>
+										<ul>
+										<li class="redTitle" style="background:url(../image/tittle.png) no-repeat;width:220px;padding-left:20px;height:47px; color:#fff; font-size:18px; line-height:47px;">
+										作业管理
+	                                    </li>
+											<LI class=#><IMG class=icon
+												src="../image//icon_1.gif"><a
+													onclick=upDownMenu(this) href="#">最新作业</a>
+												</li>
+
+											<li class=#><IMG class=icon
+												src="../image/icon_1.gif"><a
+													onclick=upDownMenu(this) href="#">未交作业</a>
+											</li>
+											<li class=#><IMG class=icon
+												src="../image/icon_1.gif"><a
+													onclick=upDownMenu(this) href="#">已交作业</a>
+													</li>
+											<li class=#><IMG class=icon
+												src="../image/icon_1.gif"><a
+													onclick=upDownMenu(this) href="#">已批作业</a>
+													</li>
+										</ul>
+										<ul>
+										<li class="redTitle" style="background:url(../image/tittle.png) no-repeat; width:220px;padding-left:20px;height:47px; color:#fff; font-size:18px; line-height:47px;">
+									个人信息管理
+	                                    </li>
+											<LI class=#><IMG class=icon
+												src="../image//icon_1.gif"><a
+													onclick=upDownMenu(this) href="#">修改密码</a>
+												</li>
+
+											<li class=# sizcache="4" sizset="0"><IMG class=icon
+												src="../image/icon_1.gif"><a
+													onclick=upDownMenu(this) href="#">修改个人信息</a>
+											</li>
+										</ul>	
+									</div>
+
+					</Div>
+  				    
+  				</td>
+  				<td class=ContentPart>
+  				  <iframe id="businessfrm" src="welcome.html"
+						frameborder="0" width="100%" name="businessfrm" scrolling="no";height="510px";></iframe>
+  				</td>
+  			</tr>
+  			<tr>
+  			<td colspan="2">
+  			<div class="foot">
+  			    江苏省连云港市淮海工学院版权所有 联系电话：0518-87695328
+  			</div>
+  			</td>
+  			</tr>
+  		</tbody>
+  	</table>
+  </body>
+</html>
